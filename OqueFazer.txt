@@ -1,2 +1,0 @@
-Não vamos esquecer de dar o commit!
-Aqui não é Go Horse!
