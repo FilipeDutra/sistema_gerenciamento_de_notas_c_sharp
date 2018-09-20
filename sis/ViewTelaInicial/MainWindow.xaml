@@ -52,7 +52,7 @@
                 </materialDesign:PopupBox>
             </StackPanel>
         </Grid>
-        <TabControl HorizontalAlignment="Right" Height="540"  VerticalAlignment="Bottom" Width="1020">
+        <TabControl  HorizontalAlignment="Right" Height="540"  VerticalAlignment="Bottom" Width="1020">
             <TabItem Header="Clientes">
                 <Grid x:Name="GridCliente" Background="#FFE5E5E5">
                     <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
@@ -81,25 +81,17 @@
             <TabItem Header="Vendedor">
                 <Grid x:Name="GridVendedor" Background="#FFE5E5E5">
                     <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
-                        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
-                        <Label Content="Telefone" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
-                        <Label Content="Endereço" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
+                        <Label Content="Codigo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="#FFFBF7F7" />
+                        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFBF7F7" />
-                        <Label Content="Cep" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="35" Height="30"/>
-                        <Label Content="Bairro" HorizontalAlignment="Left" Margin="121,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="43" Height="23"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,140,0,0"  VerticalAlignment="Top" Width="174" Background="#FFFBF7F7" />
-                        <Label Content="Cidade" HorizontalAlignment="Left" Margin="341,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="53" Height="23"/>
-                        <Label Content="UF" HorizontalAlignment="Left" Margin="587,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="32" Height="23"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="341,140,0,0"  VerticalAlignment="Top" Width="224" Background="#FFFBF7F7" />
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="612,140,0,0"  VerticalAlignment="Top" Width="35" Background="#FFFBF7F7" />
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,186,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFBF7F7" />
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="140" Background="#FFFBF7F7" />
+                        <Label Content="Cpf" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="35" Height="30"/>
+                        <Label Content="Valor" HorizontalAlignment="Left" Margin="228,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="67" Height="23"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="228,140,0,0"  VerticalAlignment="Top" Width="152" Background="#FFFBF7F7" />
                         <Button Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,186,0,0"  VerticalAlignment="Top" Width="273" Background="#FFFBF7F7" />
-                        <Label Content="Email" HorizontalAlignment="Left" Margin="121,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="64" Height="23"/>
                     </Grid>
                 </Grid>
             </TabItem>
@@ -113,6 +105,8 @@
                         <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="48" Height="25"/>
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="#FFFBF7F7" />
                         <Label Content="Descrição" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="25"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,146,0,0"  VerticalAlignment="Top" Width="109" Background="#FFFBF7F7" />
+                        <Label Content="Quantidade" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="82" Height="25"/>
                     </Grid>
                 </Grid>
             </TabItem>
@@ -122,6 +116,14 @@
                         <Button Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,40,0,0"  VerticalAlignment="Top" Width="109" Background="#FFFBF7F7" />
+                        <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="48" Height="25"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="#FFFBF7F7" />
+                        <Label Content="Descrição" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="25"/>
+                        <TextBox HorizontalAlignment="Left" Height="25" Margin="10,151,0,0"  VerticalAlignment="Top" Width="134" Background="#FFFBF7F7" />
+                        <Label Content="Valor" HorizontalAlignment="Left" Margin="23,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="52" Height="25"/>
+                        <Label Content="Valor" HorizontalAlignment="Left" Margin="23,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="52" Height="25"/>
+                        <TextBox HorizontalAlignment="Left" Height="25" Margin="10,206,0,0"  VerticalAlignment="Top" Width="134" Background="#FFFBF7F7" />
                     </Grid>
                 </Grid>
             </TabItem>
