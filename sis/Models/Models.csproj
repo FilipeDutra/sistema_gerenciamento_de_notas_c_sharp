@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
-    <Compile Include="Contexto\Contexto.cs" />
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="CupomFiscal.cs" />
     <Compile Include="Estoque.cs" />
     <Compile Include="Produto.cs" />
