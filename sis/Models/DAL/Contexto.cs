@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Contexto
+namespace Models.DAL
 {
-    class Contexto : DbContext
+    public class Contexto : DbContext
     {
         public Contexto() : base("nomeStringConexao")
         {
@@ -15,9 +15,9 @@ namespace Models.Contexto
         }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<CupomFiscal> Cupoms { get; set; }
+        public DbSet<CupomFiscal> CupomFiscals { get; set; }
         public DbSet<Estoque> Estoques { get; set; }
-        public DbSet<Vendas> Vendas { get; set; }
+        public DbSet<Vendas> Vendass { get; set; }
         public DbSet<Vendedor> Vendedors { get; set; }
     }
 }
