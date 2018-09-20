@@ -222,11 +222,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis2\\sis\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis2\\sis\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\1709440.EDUC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis\\Model\\obj\\",
+      "outputPath": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis2\\sis\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
