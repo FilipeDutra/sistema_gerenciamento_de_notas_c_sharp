@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Model
+namespace Models
 {
     class CupomFiscal
     {
+        [Key]
         public int CupumFiscalId { get; set; }
         public float Total { get; set; }
         public float Imposto { get; set; }

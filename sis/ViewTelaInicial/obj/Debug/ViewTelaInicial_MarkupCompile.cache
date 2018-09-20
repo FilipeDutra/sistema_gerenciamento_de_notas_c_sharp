@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Filipe Dutra\Documents\GitHub\sistema_gerenciamento_de_notas_c_sharp\sis\ViewTelaInicial\obj\Debug\
+=======
+C:\Users\1709440.EDUC\Documents\repo\sis2\sis\ViewTelaInicial\obj\Debug\
+>>>>>>> 20f961daf1df0651adda471a38ac06fbb4d9de37
 ViewTelaInicial
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Filipe Dutra\Documents\GitHub\sistema_gerenciamento_de_notas_c_sharp\sis\ViewTelaInicial\App.xaml
 11151548125
 
 6-1527766539
 15-778253793
+=======
+C:\Users\1709440.EDUC\Documents\repo\sis2\sis\ViewTelaInicial\App.xaml
+11151548125
+
+6-1527766539
+15-1776194974
+>>>>>>> 20f961daf1df0651adda471a38ac06fbb4d9de37
 MainWindow.xaml;
 
 False
