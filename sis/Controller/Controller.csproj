@@ -48,11 +48,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteController.cs" />
+    <Compile Include="CupomFiscalController.cs" />
+    <Compile Include="EstoqueController.cs" />
+    <Compile Include="ProdutoController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendasController.cs" />
+    <Compile Include="VendedorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{0480E7E9-5B7B-4429-B9A6-83477EEEEABD}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
