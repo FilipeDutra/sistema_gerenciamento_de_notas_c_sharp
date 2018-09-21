@@ -61,19 +61,19 @@
                     <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
                         <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="#FFFBF7F7" />
-                        <Label Content="Código do Produto" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="128" Height="23"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="289" Background="#FFFBF7F7" />
-                        <TextBox HorizontalAlignment="Left" Height="50" Margin="10,176,0,0"  VerticalAlignment="Top" Width="139" Background="#FFFBF7F7" />
-                        <Label Content="Valor Unitário" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="107" Height="39" FontSize="16"/>
+                        <Label Content="Código do Produto" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="163" Height="37" FontSize="16"/>
+                        <TextBox HorizontalAlignment="Left" Height="48" Margin="10,103,0,0"  VerticalAlignment="Top" Width="289" Background="#FFFBF7F7" />
+                        <TextBox HorizontalAlignment="Left" Height="38" Margin="10,194,0,0"  VerticalAlignment="Top" Width="139" Background="#FFFBF7F7" />
+                        <Label Content="Valor Unitário" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="107" Height="33" FontSize="16"/>
                         <Button Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
-                        <TextBox HorizontalAlignment="Left" Height="50" Margin="211,176,0,0"  VerticalAlignment="Top" Width="139" Background="#FFFBF7F7" />
-                        <Label Content="Quantidade" HorizontalAlignment="Left" Margin="211,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="121" Height="35" FontSize="16"/>
-                        <TextBox HorizontalAlignment="Left" Height="50" Margin="408,176,0,0"  VerticalAlignment="Top" Width="139" Background="#FFFBF7F7" />
-                        <Label Content="Total" HorizontalAlignment="Left" Margin="438,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="52" Height="35" FontSize="16"/>
-
+                        <TextBox HorizontalAlignment="Left" Height="38" Margin="211,194,0,0"  VerticalAlignment="Top" Width="139" Background="#FFFBF7F7" />
+                        <Label Content="Quantidade" HorizontalAlignment="Left" Margin="211,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="121" Height="33" FontSize="16"/>
+                        <TextBox HorizontalAlignment="Left" Height="38" Margin="408,194,0,0"  VerticalAlignment="Top" Width="139" Background="#FFFBF7F7" />
+                        <Label Content="Total" HorizontalAlignment="Left" Margin="438,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="52" Height="33" FontSize="16"/>
                     </Grid>
+                    <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994"/>
                 </Grid>
             </TabItem>
 
@@ -87,7 +87,7 @@
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
                         <Label Content="Endereço" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="30"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,186,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFBF7F7" />
+                        <TextBox TextAlignment="Right" Text="(00)0000-0000" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0"  VerticalAlignment="Top" Width="86" Background="#FFFBF7F7" />
                         <Button Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
@@ -106,7 +106,7 @@
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="140" Background="#FFFBF7F7" />
                         <Label Content="Cpf" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="35" Height="30"/>
-                        <Label Content="Valor" HorizontalAlignment="Left" Margin="228,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="67" Height="23"/>
+                        <Label Content="Comissão" HorizontalAlignment="Left" Margin="228,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="67" Height="23"/>
                         <TextBox HorizontalAlignment="Left" Height="23" Margin="228,140,0,0"  VerticalAlignment="Top" Width="152" Background="#FFFBF7F7" />
                         <Button Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
                         <Button Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center"/>
