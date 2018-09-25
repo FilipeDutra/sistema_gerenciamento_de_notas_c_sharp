@@ -97,27 +97,27 @@ namespace ViewTelaInicial.Views
                 Cliente cliente = new Cliente();
 
                 if (!Idcliente.Equals(""))
-                    Idcliente = cliente.ClienteId;
+                    cliente.ClienteId = Idcliente;
                 else
                     throw new Exception("Não foi possível identificar o id do cliente!");
 
                 if (Nome != null && !Nome.Equals(""))
-                    Nome = cliente.Nome;
+                    cliente.Nome = Nome;
                 else
                     throw new Exception("Não foi possível identificar o nome");
 
                 if (Endereco != null && !Endereco.Equals(""))
-                    Endereco = cliente.Endereco;
+                    cliente.Endereco = Endereco;
                 else
                     throw new Exception("Não foi possível identificar o endereço");
 
                 if (Telefone != null && !Telefone.Equals(""))
-                    Telefone = cliente.Telefone;
+                    cliente.Telefone = Telefone;
                 else
                     throw new Exception("Náo foi possível identificar o telefone");
 
                 if (Cpf != null && !Cpf.Equals(""))
-                    Cpf = cliente.CPF;
+                    cliente.CPF = Cpf;
                 else
                     throw new Exception("Não foi possível identificar o cpf");
 
