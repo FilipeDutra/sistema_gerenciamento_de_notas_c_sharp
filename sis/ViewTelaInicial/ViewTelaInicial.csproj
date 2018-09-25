@@ -68,7 +68,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\Estoque.cs" />
+    <Compile Include="Views\BackgroudView .xaml.cs">
+      <DependentUpon>BackgroudView .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClienteView .xaml.cs">
+      <DependentUpon>ClienteView .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RelatorioView.xaml.cs">
+      <DependentUpon>RelatorioView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EstoqueView .xaml.cs">
+      <DependentUpon>EstoqueView .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vendedor.xaml.cs">
+      <DependentUpon>Vendedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Venda.xaml.cs">
+      <DependentUpon>Venda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProdutoView.xaml.cs">
+      <DependentUpon>ProdutoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowCadastro.xaml.cs">
+      <DependentUpon>WindowCadastro.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,6 +104,38 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\BackgroudView .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ClienteView .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\RelatorioView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EstoqueView .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Vendedor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Venda.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProdutoView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\WindowCadastro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

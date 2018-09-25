@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ViewTelaInicial.Views.VendaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ViewTelaInicial.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1080" Width="1020" Height="540">
+    <Grid  Background="White" >
+        <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
+            <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
+            <Label Content="Telefone" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
+            <TextBox Text="{Binding ClienteId}" HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="#FFFBF7F7" />
+            <Label Content="Nome" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
+            <TextBox Text="{Binding Nome}" HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
+            <TextBox Text="{Binding Endereco}" HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="637" Background="#FFFBF7F7" />
+            <Label Content="Endereço" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="30"/>
+            <TextBox Text="{Binding Telefone}" TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0"  VerticalAlignment="Top" Width="86" Background="#FFFBF7F7" />
+            <Button x:Name="BtnSalvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
+            <Button x:Name="BtnAlterarCliente" Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
+            <Button x:Name="BtnExcluirCliente" Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
+            <TextBox Text="{Binding CPF}" HorizontalAlignment="Left" Height="23" Margin="121,186,0,0"  VerticalAlignment="Top" Width="129" Background="#FFFBF7F7" />
+            <Label Content="Cpf" HorizontalAlignment="Left" Margin="121,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="64" Height="23"/>
+        </Grid>
+        <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
+            <DataGrid.Columns>
+                <DataGridTextColumn Visibility="Hidden" Header="ID" Binding="{Binding ClienteId}"/>
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Nome}"/>
+                <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}"/>
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}"/>
+                <DataGridTextColumn Header="CPF" Binding="{Binding CPF}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

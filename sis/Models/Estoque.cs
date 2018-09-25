@@ -11,6 +11,7 @@ namespace Models
     {
         [Key]
         public int EstoqueId { get; set; }
+        // Faltou a descrição do estoque e não tem quantidade no cadastro e sim no produto!!!
         public int Quantidade { get; set; }
         public int ProdutoId { get; set; }
         public virtual Produto _Produto { get; set; }

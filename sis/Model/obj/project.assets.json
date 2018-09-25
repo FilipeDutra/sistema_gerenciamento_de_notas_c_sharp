@@ -221,19 +221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Filipe Dutra\\Documents\\GitHub\\sistema_gerenciamento_de_notas_c_sharp\\sis\\Model\\Model.csproj",
       "projectName": "Model",
       "projectPath": "C:\\Users\\Filipe Dutra\\Documents\\GitHub\\sistema_gerenciamento_de_notas_c_sharp\\sis\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\Filipe Dutra\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Filipe Dutra\\Documents\\GitHub\\sistema_gerenciamento_de_notas_c_sharp\\sis\\Model\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis2\\sis\\Model\\Model.csproj",
-      "projectName": "Model",
-      "projectPath": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis2\\sis\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\1709440.EDUC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1709440.EDUC\\Documents\\repo\\sis2\\sis\\Model\\obj\\",
->>>>>>> 20f961daf1df0651adda471a38ac06fbb4d9de37
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -283,6 +275,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Filipe Dutra\\Documents\\GitHub\\sistema_gerenciamento_de_notas_c_sharp\\sis\\Model\\obj\\Model.csproj.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

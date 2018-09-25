@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ViewTelaInicial.Views;
 
 namespace ViewTelaInicial
 {
@@ -23,6 +24,7 @@ namespace ViewTelaInicial
         public MainWindow()
         {
             InitializeComponent();
+            GridDinamic.Children.Add(new BackgroundView());
         }
 
         private void BottonPopUpLogout_Click(object sender, RoutedEventArgs e)
@@ -40,6 +42,44 @@ namespace ViewTelaInicial
         {
             ButtonOpenMenu.Visibility = Visibility.Visible;
             ButtonCloseMenu.Visibility = Visibility.Collapsed;
+        }
+
+        
+
+        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int selecionado = ListViewMenu.SelectedIndex;
+
+            switch(selecionado)
+            {
+                case 0:
+                    GridDinamic.Children.Clear();
+                    GridDinamic.Children.Add(new ClienteView());
+                    break;
+                
+                case 1:
+                    GridDinamic.Children.Clear();
+                    GridDinamic.Children.Add(new VendedorView());
+                    break;
+                case 2:
+                    GridDinamic.Children.Clear();
+                    GridDinamic.Children.Add(new EstoqueView());
+                    break;
+                case 3:
+                    GridDinamic.Children.Clear();
+                    GridDinamic.Children.Add(new ProdutoView());
+                    break;
+                case 4:
+                    GridDinamic.Children.Clear();
+                    GridDinamic.Children.Add(new RelatorioView());
+                    break;
+                default:
+                    GridDinamic.Children.Clear();
+                    GridDinamic.Children.Add(new BackgroundView());
+                    break;
+            }
+        
+
         }
     }
 }

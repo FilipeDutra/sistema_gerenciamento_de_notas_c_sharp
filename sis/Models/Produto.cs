@@ -13,6 +13,7 @@ namespace Models
         public int ProdutoId { get; set; }
         public String Descricao { get; set; }
         public float Valor { get; set; }
+        //faltou colocar a quantidade
 
         public static void Salvar(Produto obj)
         {
