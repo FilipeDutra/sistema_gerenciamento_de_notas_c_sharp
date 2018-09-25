@@ -27,7 +27,7 @@ namespace ViewTelaInicial.Views
         public ClienteView()
         {
             InitializeComponent();
-            //carregarClientes();
+            carregarClientes();
             
         }
 
