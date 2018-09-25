@@ -7,14 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1080" Width="1020" Height="540">
     <Grid  Background="White" >
-        <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="239*"/>
+        </Grid.RowDefinitions>
+        <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC" Grid.RowSpan="2">
             <Label x:Name="LaCodigo" Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
             <Label x:Name="LaTelefone" Content="Telefone" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
-<<<<<<< HEAD
-            <TextBox x:Name="TbIdCliente"  HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="#FFFBF7F7"/>
-=======
-            <TextBox x:Name="TbIdCliente" HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="Black" />
->>>>>>> 6a54893876a2447d126d77557e2a0e429193f94e
+            <TextBox x:Name="TbIdCliente"  HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="Black"/>
             <Label x:Name="LaNome" Content="Nome" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
             <TextBox x:Name="TbNome"  HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="Black" />
             <TextBox x:Name="TbEndereco"  HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="637" Background="Black" />
@@ -26,7 +26,7 @@
             <TextBox x:Name="TbCpf"  HorizontalAlignment="Left" Height="23" Margin="121,186,0,0"  VerticalAlignment="Top" Width="129" Background="Black" />
             <Label x:Name="LaCpf" Content="Cpf" HorizontalAlignment="Left" Margin="121,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="64" Height="23"/>
         </Grid>
-        <DataGrid x:Name="dbGridCliente" HorizontalAlignment="Center" AutoGenerateColumns="False" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
+        <DataGrid x:Name="dbGridCliente" HorizontalAlignment="Center" AutoGenerateColumns="False" Height="245" Margin="13,0,13,10" VerticalAlignment="Bottom" Width="994" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Visibility="Hidden" Header="ID" Binding="{Binding ClienteId}"/>
                 <DataGridTextColumn Header="Cliente" Binding="{Binding Nome}"/>

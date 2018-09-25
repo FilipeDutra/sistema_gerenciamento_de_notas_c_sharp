@@ -97,31 +97,6 @@ namespace ViewTelaInicial.Views
 
                 //new Cliente();
 
-<<<<<<< HEAD
-                if (!Idcliente.Equals(""))
-                    cliente.ClienteId = Idcliente;
-                else
-                    throw new Exception("Não foi possível identificar o id do cliente!");
-
-                if (Nome != null && !Nome.Equals(""))
-                    cliente.Nome = Nome;
-                else
-                    throw new Exception("Não foi possível identificar o nome");
-
-                if (Endereco != null && !Endereco.Equals(""))
-                    cliente.Endereco = Endereco;
-                else
-                    throw new Exception("Não foi possível identificar o endereço");
-
-                if (Telefone != null && !Telefone.Equals(""))
-                    cliente.Telefone = Telefone;
-                else
-                    throw new Exception("Náo foi possível identificar o telefone");
-
-                if (Cpf != null && !Cpf.Equals(""))
-                    cliente.CPF = Cpf;
-                else
-=======
                 if (Idcliente.Equals(""))
                    throw new Exception("Não foi possível identificar o id do cliente!");
 
@@ -135,7 +110,6 @@ namespace ViewTelaInicial.Views
                     throw new Exception("Náo foi possível identificar o telefone");
 
                 if (Cpf == null && Cpf.Equals(""))
->>>>>>> 6a54893876a2447d126d77557e2a0e429193f94e
                     throw new Exception("Não foi possível identificar o cpf");
 
                 clienteController.AlterarCliente(Idcliente, Nome, Endereco, Telefone, Cpf);
