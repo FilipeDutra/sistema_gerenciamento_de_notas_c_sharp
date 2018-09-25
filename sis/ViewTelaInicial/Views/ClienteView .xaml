@@ -22,7 +22,7 @@
             <TextBox x:Name="TbCpf" Text="{Binding CPF}" HorizontalAlignment="Left" Height="23" Margin="121,186,0,0"  VerticalAlignment="Top" Width="129" Background="#FFFBF7F7" />
             <Label x:Name="LaCpf" Content="Cpf" HorizontalAlignment="Left" Margin="121,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="64" Height="23"/>
         </Grid>
-        <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
+        <DataGrid x:Name="dbGridCliente" HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
             <DataGrid.Columns>
                 <DataGridTextColumn Visibility="Hidden" Header="ID" Binding="{Binding ClienteId}"/>
                 <DataGridTextColumn Header="Cliente" Binding="{Binding Nome}"/>

@@ -27,6 +27,7 @@ namespace ViewTelaInicial.Views
         public ClienteView()
         {
             InitializeComponent();
+            carregarClientes();
             
         }
 
@@ -146,6 +147,14 @@ namespace ViewTelaInicial.Views
             catch(Exception s)
             {
                 throw (s);
+            }
+        }
+        private void carregarClientes()
+        {
+            IList<Cliente> ListaClientes = clienteController.ListarCliente();
+            if(ListaClientes != null)
+            {
+                dbGridCliente.ItemsSource = ListaClientes;
             }
         }
     }
