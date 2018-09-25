@@ -156,6 +156,10 @@ namespace ViewTelaInicial.Views
             {
                 dbGridCliente.ItemsSource = ListaClientes;
             }
+            else
+            {
+                throw new Exception("Não foi carregar a lista de clientes");
+            }
         }
     }
 }
