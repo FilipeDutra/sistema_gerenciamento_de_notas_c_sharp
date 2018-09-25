@@ -23,7 +23,7 @@
         <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
             <DataGrid.Columns>
                 <DataGridTextColumn Visibility="Hidden" Header="ID" Binding="{Binding VendedorId}"/>
-                <DataGridTextColumn Header="Cliente" Binding="{Binding Nome}"/>
+                <DataGridTextColumn Header="Vendedor" Binding="{Binding Nome}"/>
                 <DataGridTextColumn Header="CPF" Binding="{Binding CPF}"/>
                 <DataGridTextColumn Header="Comissão" Binding="{Binding Comissao}"/>
             </DataGrid.Columns>
