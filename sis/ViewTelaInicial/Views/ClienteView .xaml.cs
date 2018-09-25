@@ -41,7 +41,7 @@ namespace ViewTelaInicial.Views
         {
             try
             {
-                int Idcliente = int.Parse(TbIdCliente.Text);
+                //int Idcliente = int.Parse(TbIdCliente.Text);
                 String Nome = TbNome.Text;
                 String Endereco = TbEndereco.Text;
                 String Telefone = TbTelefone.Text;
@@ -77,6 +77,7 @@ namespace ViewTelaInicial.Views
 
 
                 clienteController.SalvarCliente(cliente);
+                carregarClientes();
             }
             catch(Exception s)
             {
@@ -88,41 +89,32 @@ namespace ViewTelaInicial.Views
         {
             try
             {
-                int Idcliente = int.Parse( TbIdCliente.Text);
+                int Idcliente = int.Parse(TbIdCliente.Text);
                 String Nome = TbNome.Text;
                 String Endereco = TbEndereco.Text;
                 String Telefone = TbTelefone.Text;
                 String Cpf = TbCpf.Text;
 
-                Cliente cliente = new Cliente();
+                //new Cliente();
 
-                if (!Idcliente.Equals(""))
-                    Idcliente = cliente.ClienteId;
-                else
-                    throw new Exception("Não foi possível identificar o id do cliente!");
+                if (Idcliente.Equals(""))
+                   throw new Exception("Não foi possível identificar o id do cliente!");
 
-                if (Nome != null && !Nome.Equals(""))
-                    Nome = cliente.Nome;
-                else
+                if (Nome == null && Nome.Equals(""))
                     throw new Exception("Não foi possível identificar o nome");
 
-                if (Endereco != null && !Endereco.Equals(""))
-                    Endereco = cliente.Endereco;
-                else
+                if (Endereco == null && Endereco.Equals(""))
                     throw new Exception("Não foi possível identificar o endereço");
 
-                if (Telefone != null && !Telefone.Equals(""))
-                    Telefone = cliente.Telefone;
-                else
+                if (Telefone == null && Telefone.Equals(""))
                     throw new Exception("Náo foi possível identificar o telefone");
 
-                if (Cpf != null && !Cpf.Equals(""))
-                    Cpf = cliente.CPF;
-                else
+                if (Cpf == null && Cpf.Equals(""))
                     throw new Exception("Não foi possível identificar o cpf");
 
-
                 clienteController.AlterarCliente(Idcliente, Nome, Endereco, Telefone, Cpf);
+
+                carregarClientes();
             }
             catch (Exception s)
             {
@@ -135,17 +127,17 @@ namespace ViewTelaInicial.Views
             try
             {
                 int IdCliente = int.Parse(TbIdCliente.Text);
-                Cliente cliente = new Cliente();
-
-                if (IdCliente.Equals(""))
+                
+                if (IdCliente != null)
                 {
-                    IdCliente = cliente.ClienteId;
                     clienteController.ExclirCliente(IdCliente);
                 }
                 else
                     throw new Exception("Não foi possível localizar o idCliente");
+                carregarClientes();
             }
-            catch(Exception s)
+            
+            catch (Exception s)
             {
                 throw (s);
             }
