@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\1709440.EDUC\Documents\repo\sis2\sis\ViewTelaInicial\obj\Release\
+C:\Users\1709440.EDUC\Documents\repo\final_final\sis\ViewTelaInicial\obj\Release\
 ViewTelaInicial
 none
 false
 TRACE
-C:\Users\1709440.EDUC\Documents\repo\sis2\sis\ViewTelaInicial\App.xaml
-2-310130332
+C:\Users\1709440.EDUC\Documents\repo\final_final\sis\ViewTelaInicial\App.xaml
+9927153041
 
-6-1819267052
-15-1776194974
-MainWindow.xaml;ViewCliente\CadastroCliente.xaml;
+13-1364784645
+18904143457
+MainWindow.xaml;Views\BackgroudView .xaml;Views\ClienteView .xaml;Views\RelatorioView.xaml;Views\EstoqueView .xaml;Views\Vendedor.xaml;Views\Venda.xaml;Views\ProdutoView.xaml;Views\WindowCadastro.xaml;
 
 True
 

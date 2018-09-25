@@ -25,7 +25,16 @@ namespace Controller
         {
             try
             {
-                Cliente.Atualizar(id, NovoTelefone, NovoTelefone, NovoEndereco, NovoCPF);
+                Cliente cliente = GetById(id);
+                
+                if (cliente != null)
+                {
+                    Cliente.Atualizar(id, NovoTelefone, NovoTelefone, NovoEndereco, NovoCPF);
+                }
+                else
+                {
+                    throw new Exception("Cliente nao encontrado");
+                }
             }
             catch (Exception e)
             {
@@ -57,22 +66,21 @@ namespace Controller
             }
             return ListaClientes;
         }
-        /*
-        public  GetById(int id)
+        
+        public Cliente GetById(int id)
         {
-            int ide;
             
-            Cliente IdCliente;
+            Cliente obj = new Cliente();
             try
             {
-                
-                IdCliente = Cliente.GetById(id.);
+
+                obj = Cliente.GetById(id);
             }
             catch(Exception e)
             {
                 throw (e);
             }
-            return IdCliente;
-        }*/
+            return obj;
+        }
     }
 }
