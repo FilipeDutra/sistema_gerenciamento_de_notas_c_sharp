@@ -14,6 +14,8 @@ namespace Models
         public String Nome { get; set; }
         public float Comissao { get; set; }
         public String CPF { get; set; }
+        public int CargoId { get; set; }
+        public virtual Cargo Cargo { get; set; }
 
         public static void Salvar(Vendedor obj)
         {

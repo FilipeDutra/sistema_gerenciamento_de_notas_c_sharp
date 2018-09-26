@@ -19,6 +19,8 @@ namespace Models.DAL
         public DbSet<Estoque> Estoques { get; set; }
         public DbSet<Vendas> Vendass { get; set; }
         public DbSet<Vendedor> Vendedors { get; set; }
+        public DbSet<Cargo> Cargos { get; set; }
+
     }
 }
 
