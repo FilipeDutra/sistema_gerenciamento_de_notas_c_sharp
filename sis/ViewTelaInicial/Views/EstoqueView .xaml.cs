@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controller;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +22,39 @@ namespace ViewTelaInicial.Views
     /// </summary>
     public partial class EstoqueView : UserControl
     {
+        CargoController cargoController = new CargoController();
         public EstoqueView()
         {
             //InitializeComponent();
             InitializeComponent();
+        }
+
+        private void clickCargoSalvar(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //int Idcliente = int.Parse(TbIdCliente.Text);
+                String Descricao = TbDescricao.Text;
+
+                Cargo cargo  = new Cargo();
+
+                /*if (!Idcliente.Equals(""))
+                    Idcliente = cliente.ClienteId;  
+                else
+                    throw new Exception("Não foi possível identificar o id do cliente!");
+                */
+                if (Descricao == null)
+                    throw new Exception("Não foi possível identificar o nome");
+
+                cargo.Descricao = Descricao;                
+
+                cargoController.SalvarCargo(cargo);
+            }
+            catch (Exception s)
+            {
+                throw (s);
+            }
+
         }
     }
 }

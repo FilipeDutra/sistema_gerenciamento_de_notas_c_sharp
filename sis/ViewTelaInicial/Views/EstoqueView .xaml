@@ -8,12 +8,10 @@
              d:DesignHeight="600" d:DesignWidth="1080" Width="1020" Height="540">
     <Grid  Background="White" >
         <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
-            <Button x:Name="BtnSalvarCargo" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
-            <Button x:Name="BtnAlterarCargo" Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
-            <Button x:Name="BtnExcluirCargo" Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
+            <Button x:Name="BtnSalvarCargo" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" Click="clickCargoSalvar" />
             <TextBox Text="{Binding EstoqueId}" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0"  VerticalAlignment="Top" Width="109" Background="Black" />
             <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
-            <TextBox Text="{Binding Descricao}" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="Black" />
+            <TextBox x:Name="TbDescricao" Text="{Binding Descricao}" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="Black" />
             <Label Content="Descrição" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="25"/>
         </Grid>
         <DataGrid x:Name="DBGridCargo" HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">

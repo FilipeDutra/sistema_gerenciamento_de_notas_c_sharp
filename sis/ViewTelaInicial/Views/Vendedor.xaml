@@ -11,18 +11,18 @@
             <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
             <TextBox Text="{Binding VendedorId}" HorizontalAlignment="Left" Height="23" Margin="10,33,0,0"  VerticalAlignment="Top" Width="86" Background="Black" />
             <Label Content="Nome" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="23"/>
-            <TextBox Text="{Binding Nome}" HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="Black" />
-            <TextBox Text="{Binding CPF}" HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="140" Background="Black" />
+            <TextBox x:Name="TbNome" Text="{Binding Nome}" HorizontalAlignment="Left" Height="23" Margin="10,84,0,0"  VerticalAlignment="Top" Width="637" Background="Black" />
+            <TextBox x:Name="TbCpf" Text="{Binding CPF}" HorizontalAlignment="Left" Height="23" Margin="10,140,0,0"  VerticalAlignment="Top" Width="140" Background="Black" />
             <Label Content="Cpf" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="35" Height="30"/>
             <Label Content="Comissão" HorizontalAlignment="Left" Margin="228,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="67" Height="23"/>
-            <TextBox Text="{Binding Comissao}" HorizontalAlignment="Left" Height="23" Margin="228,140,0,0"  VerticalAlignment="Top" Width="152" Background="Black" />
+            <TextBox x:Name="TbComissao" Text="{Binding Comissao}" HorizontalAlignment="Left" Height="23" Margin="228,140,0,0"  VerticalAlignment="Top" Width="152" Background="Black" />
             <Button x:Name="BtnSalvarVendedor" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
             <Button x:Name="BtnAlterarVendedor" Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
             <Button x:Name="BtnExcluirvendedor" Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
             <ComboBox x:Name="CbCargo" HorizontalAlignment="Left" Margin="451,140,0,0" VerticalAlignment="Top" Width="196" Height="23"/>
             <Label Content="Cargo" HorizontalAlignment="Left" Margin="451,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="119" Height="23"/>
         </Grid>
-        <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
+        <DataGrid x:Name="DbGridVendedor" HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
             <DataGrid.Columns>
                 <DataGridTextColumn Visibility="Hidden" Header="ID" Binding="{Binding VendedorId}"/>
                 <DataGridTextColumn Header="Vendedor" Binding="{Binding Nome}"/>
