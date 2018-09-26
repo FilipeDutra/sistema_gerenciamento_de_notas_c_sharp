@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Filipe Dutra\Documents\GitHub\maisdois\sistema_gerenciamento_de_notas_c_sharp\sis\ViewTelaInicial\App.xaml
-9927153041
+91858750296
 
-13-1364784645
+13-1940350438
 201204626492
-MainWindow.xaml;Views\BackgroudView .xaml;Views\ClienteView .xaml;Views\RelatorioView.xaml;Views\EstoqueView .xaml;Views\Vendedor.xaml;Views\Venda.xaml;Views\ProdutoView.xaml;Views\WindowCadastro.xaml;
+MainWindow.xaml;Views\BackgroudView .xaml;Views\ClienteView .xaml;Views\RelatorioView.xaml;Views\CargoView .xaml;Views\Vendedor.xaml;Views\Venda.xaml;Views\ProdutoView.xaml;Views\WindowCadastro.xaml;
 
 False
 

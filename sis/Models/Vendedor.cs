@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
+
 namespace Models
 {
     public class Vendedor
@@ -44,13 +45,14 @@ namespace Models
             contexto.SaveChanges();
         }
 
-        public static void Atualizar(int id, String NovoNome, float NovaComissao, String NovoCPF)
+        public static void Atualizar(int id, String NovoNome, float NovaComissao, String NovoCPF, int idCargo)
         {
             Contexto contexto = new Contexto();
             Vendedor camp = contexto.Vendedors.Find(id);
             camp.Nome = NovoNome;
             camp.Comissao = NovaComissao;
             camp.CPF = NovoCPF;
+            camp.CargoId = idCargo;
 
             contexto.Entry(camp).State = System.Data.Entity.EntityState.Modified;
             contexto.SaveChanges();

@@ -11,13 +11,13 @@
                         <Button x:Name="BtnSalvarProduto" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
                         <Button x:Name="BtnAlterarProduto" Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
                         <Button x:Name="BtnExcluirProduto" Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
-                        <TextBox Text="{Binding ProdutoId}" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0"  VerticalAlignment="Top" Width="109" Background="Black" />
+            <TextBox Text="{Binding ProdutoId}" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0"  VerticalAlignment="Top" Width="109" Background="#FFF9F5F5" Foreground="Black" />
                         <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
-                        <TextBox Text="{Binding Descricao}" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="Black" />
+            <TextBox Text="{Binding Descricao}" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="#FFFBF8F8" Foreground="Black"/>
                         <Label Content="Descrição" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="25"/>
-                        <TextBox Text="{Binding Valor}" HorizontalAlignment="Left" Height="25" Margin="10,151,0,0"  VerticalAlignment="Top" Width="134" Background="Black" />
+            <TextBox Text="{Binding Valor}" HorizontalAlignment="Left" Height="25" Margin="10,151,0,0"  VerticalAlignment="Top" Width="134" Background="#FFFDF7F7" Foreground="Black" />
                         <Label Content="Valor" HorizontalAlignment="Left" Margin="23,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="52" Height="25"/>
-                        <TextBox Text="{Binding Quantidade}" HorizontalAlignment="Left" Height="25" Margin="267,151,0,0"  VerticalAlignment="Top" Width="221" Background="Black" />
+            <TextBox Text="{Binding Quantidade}" HorizontalAlignment="Left" Height="25" Margin="267,151,0,0"  VerticalAlignment="Top" Width="221" Background="#FFF9F9F9" Foreground="Black"/>
                         <Label Content="Quantidade" HorizontalAlignment="Left" Margin="267,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="85" Height="25"/>
                     </Grid>
                     <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">

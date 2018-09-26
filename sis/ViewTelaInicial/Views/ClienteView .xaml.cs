@@ -30,12 +30,13 @@ namespace ViewTelaInicial.Views
             carregarClientes();
             
         }
-
+        /*
         private void BtnSalvarVendedor_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
+        */
 
         private void ClickSalvarCliente(object sender, RoutedEventArgs e)
         {

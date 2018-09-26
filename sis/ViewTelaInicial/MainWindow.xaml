@@ -40,14 +40,15 @@
             </Grid.Background>
             <TextBlock Text="Sistema de Vendas" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
-                <TextBlock Text="Filipe Dutra" VerticalAlignment="Center" FontSize="18"/>
+                <!--<TextBlock Text="Filipe Dutra" VerticalAlignment="Center" FontSize="18"/>-->
                 <materialDesign:PopupBox HorizontalAlignment="Right" Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
-                        <Button Content="Conta"/>
+                       <!-- <Button Content="Conta"/>
                         <Button Content="Configurações"/>
                         <Button Content="Ajuda"/>
+                        -->
                         <Separator />
-                        <Button x:Name="BottonPopUpLogout" Content="Logout" Click="BottonPopUpLogout_Click"/>
+                        <Button x:Name="BottonPopUpLogout" Content="Sair" Click="BottonPopUpLogout_Click"/>
                     </StackPanel>
                 </materialDesign:PopupBox>
             </StackPanel>
@@ -85,7 +86,7 @@
                     <ListViewItem  Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Eventbrite" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
-                            <TextBlock Text="Estoque" VerticalAlignment="Center" Margin="20 10"/>
+                            <TextBlock Text="Cargo" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
 
@@ -95,14 +96,14 @@
                             <TextBlock Text="Produto" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
-
+<!--
                     <ListViewItem  Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Attachment" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
                             <TextBlock Text="Relatorio" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
-
+-->
                 </ListView>
             </StackPanel>
         </Grid>

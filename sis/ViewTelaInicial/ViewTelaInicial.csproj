@@ -77,8 +77,8 @@
     <Compile Include="Views\RelatorioView.xaml.cs">
       <DependentUpon>RelatorioView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\EstoqueView .xaml.cs">
-      <DependentUpon>EstoqueView .xaml</DependentUpon>
+    <Compile Include="Views\CargoView .xaml.cs">
+      <DependentUpon>CargoView .xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Vendedor.xaml.cs">
       <DependentUpon>Vendedor.xaml</DependentUpon>
@@ -116,7 +116,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\EstoqueView .xaml">
+    <Page Include="Views\CargoView .xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

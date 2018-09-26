@@ -27,5 +27,11 @@ namespace Models
             Contexto contexto = new Contexto();
             return contexto.Cargos.Find(id);
         }
+
+        public static List<Cargo> ListarCargos()
+        {
+            Contexto contexto = new Contexto();
+            return contexto.Cargos.ToList();
+        }
     }
 }

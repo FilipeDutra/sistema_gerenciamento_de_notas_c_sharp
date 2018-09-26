@@ -63,7 +63,7 @@ namespace ViewTelaInicial
                     break;
                 case 2:
                     GridDinamic.Children.Clear();
-                    GridDinamic.Children.Add(new EstoqueView());
+                    GridDinamic.Children.Add(new CargoView());
                     break;
                 case 3:
                     GridDinamic.Children.Clear();

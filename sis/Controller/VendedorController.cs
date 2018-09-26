@@ -20,7 +20,7 @@ namespace Controller
                 throw (e);
             }
         }
-        public void AlterarVendedor(int id, String NovoNome, float NovaComissao, String NovoCPF)
+        public void AlterarVendedor(int id, String NovoNome, float NovaComissao, String NovoCPF, int idCargo)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace Controller
 
                 if (vendedor != null)
                 {
-                    Vendedor.Atualizar(id, NovoNome, NovaComissao, NovoCPF);
+                    Vendedor.Atualizar(id, NovoNome, NovaComissao, NovoCPF, idCargo);
                 }
                 else
                 {
