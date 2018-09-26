@@ -19,6 +19,8 @@
             <Button x:Name="BtnSalvarVendedor" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
             <Button x:Name="BtnAlterarVendedor" Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
             <Button x:Name="BtnExcluirvendedor" Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" />
+            <ComboBox x:Name="CbCargo" HorizontalAlignment="Left" Margin="451,140,0,0" VerticalAlignment="Top" Width="196" Height="23"/>
+            <Label Content="Cargo" HorizontalAlignment="Left" Margin="451,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="119" Height="23"/>
         </Grid>
         <DataGrid HorizontalAlignment="Center" Height="245" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="994">
             <DataGrid.Columns>
