@@ -9,6 +9,7 @@ namespace Controller
 {
     public class VendedorController
     {
+        //salva vendedor
         public void SalvarVendedor(Vendedor vendedor)
         {
             try
@@ -20,6 +21,8 @@ namespace Controller
                 throw (e);
             }
         }
+        
+        //altera vendedor
         public void AlterarVendedor(int id, String NovoNome, float NovaComissao, String NovoCPF, int idCargo)
         {
             try
@@ -40,6 +43,8 @@ namespace Controller
                 throw (e);
             }
         }
+
+        //exclui vendedor
         public void ExcluirVendedor(int id)
         {
             try
@@ -53,6 +58,8 @@ namespace Controller
                 throw (e);
             }
         }
+
+        //lista vendedor
         public IList<Vendedor> ListarVendedor()
         {
             IList<Vendedor> ListarVendedor;
@@ -68,6 +75,7 @@ namespace Controller
             return ListarVendedor;
         }
 
+        //retorna vendedor por id
         public Vendedor GetById(int id)
         {
 

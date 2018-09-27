@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 namespace Controller
 {
     public class CargoController
-    {
+    {	
+    	//salva cargo
         public void SalvarCargo(Cargo cargo)
         {
             try
@@ -21,13 +22,14 @@ namespace Controller
                 throw (e);
             }
         }
-
+        //lista cargo	
         public List<Cargo> ListarCargos()
         {
             Contexto contexto = new Contexto();
             return contexto.Cargos.ToList();
         }
 
+        //retorna cargo por id
         public static Cargo GetById(int id)
         {
             Contexto contexto = new Contexto();
