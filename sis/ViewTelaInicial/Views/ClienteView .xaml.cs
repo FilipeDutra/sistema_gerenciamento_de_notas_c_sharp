@@ -127,20 +127,20 @@ namespace ViewTelaInicial.Views
         {
             try
             {
-                int IdCliente = int.Parse(TbIdCliente.Text);
-                
-                if (TbIdCliente.Text != null)
+                MessageBoxResult result = MessageBox.Show("Deseja excluir",
+                "Confirma", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                if (result.Equals(MessageBoxResult.OK))
                 {
-                    clienteController.ExclirCliente(IdCliente);
+                    Cliente cliente = ((FrameworkElement)sender).DataContext as Cliente;
+                    clienteController.ExclirCliente(cliente.ClienteId);
+                    
+                    MessageBox.Show("Cliente Excluído com sucesso");
+                    carregarClientes();
                 }
-                else
-                    throw new Exception("Não foi possível localizar o idCliente");
-                carregarClientes();
             }
-            
             catch (Exception s)
             {
-                throw (s);
+                MessageBox.Show(s.Message);
             }
         }
         private void carregarClientes()
@@ -154,6 +154,20 @@ namespace ViewTelaInicial.Views
             {
                 throw new Exception("Não foi carregar a lista de clientes");
             }
+        }
+
+        private void BtnLimparCliente_Click(object sender, RoutedEventArgs e)
+        {
+            LimparForm();
+        }
+
+        private void LimparForm()
+        {
+            TbIdCliente.Text = "";
+            TbNome.Text = "";
+            TbCpf.Text = "";
+            TbTelefone.Text = "";
+            TbEndereco.Text = "";
         }
     }
 }

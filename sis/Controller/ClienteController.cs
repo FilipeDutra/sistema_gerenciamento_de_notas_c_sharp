@@ -10,7 +10,6 @@ namespace Controller
 {
     public class ClienteController
     {
-        //salva cliente
         public void SalvarCliente(Cliente cliente)
         {
             try
@@ -22,8 +21,6 @@ namespace Controller
                 throw (e);
             }
         }
-        
-        //altera cliente
         public void AlterarCliente(int id, String NovoNome, String NovoTelefone, String NovoEndereco, String NovoCPF)
         {
             try
@@ -44,8 +41,6 @@ namespace Controller
                 throw (e);
             }
         }
-
-        //exclui cliente
         public void ExclirCliente(int id)
         {
             try
@@ -57,8 +52,6 @@ namespace Controller
                 throw (e);
             }
         }
-
-        //lista cliente
         public IList<Cliente> ListarCliente()
         {
             IList<Cliente> ListaClientes;

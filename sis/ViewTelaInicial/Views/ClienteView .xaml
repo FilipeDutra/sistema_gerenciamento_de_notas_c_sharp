@@ -22,7 +22,7 @@
             <TextBox x:Name="TbTelefone"  TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0"  VerticalAlignment="Top" Width="86" Background="#FFF1EEEE" Foreground="Black"/>
             <Button x:Name="BtnSalvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" Click="ClickSalvarCliente" />
             <Button x:Name="BtnAlterarCliente" Content="Alterar" HorizontalAlignment="Left" Margin="830,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" Click="ClickAlterarCliente" />
-            <Button x:Name="BtnExcluirCliente" Content="Excluir" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" Click="ClickExcluirCliente" />
+            <Button x:Name="BtnLimparCliente" Content="Limpar" HorizontalAlignment="Left" Margin="920,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" Click="BtnLimparCliente_Click" />
             <TextBox x:Name="TbCpf"  HorizontalAlignment="Left" Height="23" Margin="121,186,0,0"  VerticalAlignment="Top" Width="129" Background="#FFFDFAFA" Foreground="Black"/>
             <Label x:Name="LaCpf" Content="Cpf" HorizontalAlignment="Left" Margin="121,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="64" Height="23"/>
         </Grid>
@@ -33,6 +33,14 @@
                 <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}"/>
                 <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}"/>
                 <DataGridTextColumn Header="CPF" Binding="{Binding CPF}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="ClickExcluirCliente" Name="btnExcluirCliente">Excluir</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

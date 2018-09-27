@@ -157,56 +157,7 @@ namespace ViewTelaInicial.Views
             }
         }
 
-        //Lista de cargos para o combox e retornar id para model vendedorController
-
-        private void CbListaCargos(object sender, ContextMenuEventArgs e)
-        {
-
-            //SqlConnection sqlcn = new SqlConnection(connetionString);
-           // Contexto sqlcn = new Contexto(nomeStringConexao);
-
-
-
-
-            /*
-            Cargo cargo = new Cargo();
-            IList<Cargo> ListaCargos = CargoController.ListarCargos();
-
-            if(ListaCargos != null)
-            {
-                CbCargo = ListaCargos.
-                /*
-                CbCargo.DisplayMemberPath = "Cargo";
-                CbCargo.DataContext = ListaCargos;
-                CbCargo.GetValue
-                
-            }
-            
-            /*
-            private void preencher_cbNome()
-            {
-                SqlConnection sqlcn = new SqlConnection(connetionString);
-                try
-                {
-                    sqlcn.Open();
-                    string consulta = "select * from Comprador";
-                    SqlDataAdapter sqlda = new SqlDataAdapter(consulta, sqlcn);
-                    DataTable dtRetorno = new DataTable();
-                    dtRetorno.Clear();
-                    sqlda.Fill(dtRetorno);
-                    cbxNome.DataSource = dtRetorno;
-                    cbxNome.ValueMember = "id";
-                    cbxNome.DisplayMember = "nome";
-                    cbxNome.SelectedItem = "";
-                    cbxNome.Refresh();
-                }
-                catch (SqlException sqlex)
-                {
-                    MessageBox.Show("Falha ao efetuar a conexão! Erro: " + sqlex);
-                }
-
-                */
-        }
+        
 
         private void btnLimpar_Click(object sender, RoutedEventArgs e) {
             LimparForm();

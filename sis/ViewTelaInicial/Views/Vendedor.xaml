@@ -18,7 +18,7 @@
             <TextBox x:Name="TbComissao" Text="{Binding Comissao}" HorizontalAlignment="Left" Height="23" Margin="228,140,0,0"  VerticalAlignment="Top" Width="152" Background="WhiteSmoke" Foreground="Black"/>
             <Button x:Name="BtnSalvarVendedor" Content="Salvar" HorizontalAlignment="Left" Margin="736,206,0,20" Width="74" Height="26" FontWeight="Normal" VerticalAlignment="Center" Click="ClickSalvarVendedor" />
             <Button x:Name="BtnAlterarVendedor" Content="Alterar" HorizontalAlignment="Left" Margin="826,206,0,20" Width="74" Height="26" FontWeight="Normal" VerticalAlignment="Center" />
-            <ComboBox x:Name="CbCargo"  HorizontalAlignment="Left" Margin="451,140,0,0" VerticalAlignment="Top" Width="196" Height="23" Background="Black" />
+            <ComboBox x:Name="CbCargo"  HorizontalAlignment="Left" Margin="451,140,0,0" VerticalAlignment="Top" Width="196" Height="23" Background="White" Foreground="Black" />
             <Label Content="Cargo" HorizontalAlignment="Left" Margin="451,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="119" Height="26"/>
             <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="915,206,0,20" Width="74" Height="26" FontWeight="Normal" VerticalAlignment="Center" Click="btnLimpar_Click" />
         </Grid>
