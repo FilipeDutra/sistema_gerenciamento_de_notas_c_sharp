@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace ViewTelaInicial.Views
     /// </summary>
     public partial class ProdutoView : UserControl
     {
+        ProdutoController produtoController = new ProdutoController();
+
         public ProdutoView()
         {
             InitializeComponent();
+
+        }
+
+        private void ClickSalvarProduto(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
