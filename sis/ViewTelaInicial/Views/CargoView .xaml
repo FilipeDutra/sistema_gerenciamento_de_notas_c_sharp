@@ -9,7 +9,7 @@
     <Grid  Background="White" >
         <Grid Width="1004" HorizontalAlignment="Right" Height="252" VerticalAlignment="Top" Background="#FFD5DCEC">
             <Button x:Name="BtnSalvarCargo" Content="Salvar" HorizontalAlignment="Left" Margin="740,208,0,22" Width="74" Height="25" FontWeight="Normal" VerticalAlignment="Center" Click="clickCargoSalvar" />
-            <TextBox Text="{Binding EstoqueId}" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0"  VerticalAlignment="Top" Width="109" Background="#FFF9F6F6" Foreground="Black" />
+            <TextBox x:Name="TbIdCargo" Text="{Binding EstoqueId}" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0"  VerticalAlignment="Top" Width="109" Background="#FFF9F6F6" Foreground="Black" />
             <Label Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="50" Height="23"/>
             <TextBox x:Name="TbDescricao" Text="{Binding Descricao}" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0"  VerticalAlignment="Top" Width="478" Background="#FFF5ECEC" Foreground="Black" />
             <Label Content="Descrição" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,-1.846" Width="65" Height="25"/>

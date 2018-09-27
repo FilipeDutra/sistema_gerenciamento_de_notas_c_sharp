@@ -25,24 +25,20 @@ namespace ViewTelaInicial.Views
         CargoController cargoController = new CargoController();
         public CargoView()
         {
-            //InitializeComponent();
+            
             InitializeComponent();
+            carregarCargos();
         }
 
         private void clickCargoSalvar(object sender, RoutedEventArgs e)
         {
             try
             {
-                //int Idcliente = int.Parse(TbIdCliente.Text);
+                int IdCargo = int.Parse(TbIdCargo.Text);
                 String Descricao = TbDescricao.Text;
 
                 Cargo cargo  = new Cargo();
 
-                /*if (!Idcliente.Equals(""))
-                    Idcliente = cliente.ClienteId;  
-                else
-                    throw new Exception("Não foi possível identificar o id do cliente!");
-                */
                 if (Descricao == null)
                     throw new Exception("Não foi possível identificar o nome");
 
@@ -55,6 +51,24 @@ namespace ViewTelaInicial.Views
                 throw (s);
             }
 
+        }
+
+        private void carregarCargos()
+
+        {
+            Cargo cargo = new Cargo();
+
+            IList<Cargo> ListaCargos = CargoController.ListarCargos();
+
+            //IList<Cargo> ListaCargos = cargoController.ListarCargos();
+            if (ListaCargos != null)
+            {
+                DBGridCargo.ItemsSource = ListaCargos;
+            }
+            else
+            {
+                throw new Exception("Não foi carregar a lista de clientes");
+            }
         }
     }
 }
