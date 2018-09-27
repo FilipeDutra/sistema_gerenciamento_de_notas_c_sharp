@@ -33,5 +33,15 @@ namespace ViewTelaInicial.Views
         {
 
         }
+
+        private void ClickAlterarProduto(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ClickExcluirProduto(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
