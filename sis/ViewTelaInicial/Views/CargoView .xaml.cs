@@ -57,8 +57,9 @@ namespace ViewTelaInicial.Views
 
         {
             Cargo cargo = new Cargo();
+            CargoController cargoCtlr = new CargoController();
 
-            IList<Cargo> ListaCargos = CargoController.ListarCargos();
+            IList<Cargo> ListaCargos = cargoCtlr.ListarCargos();
 
             //IList<Cargo> ListaCargos = cargoController.ListarCargos();
             if (ListaCargos != null)

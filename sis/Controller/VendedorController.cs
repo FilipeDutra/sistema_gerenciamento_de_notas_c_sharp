@@ -40,11 +40,13 @@ namespace Controller
                 throw (e);
             }
         }
-        public void ExclirVendedor(int id)
+        public void ExcluirVendedor(int id)
         {
             try
             {
-                Vendedor.Remove(id);
+                Vendedor vend = Vendedor.GetById(id);
+                if (vend != null)
+                    Vendedor.Remove(id);
             }
             catch (Exception e)
             {

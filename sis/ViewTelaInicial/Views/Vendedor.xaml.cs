@@ -31,6 +31,7 @@ namespace ViewTelaInicial.Views
         {
             InitializeComponent();
             carregarVendedores();
+            CarregarCargos();
         }
 
         private void ClickSalvarVendedor(object sender, RoutedEventArgs e)
@@ -41,7 +42,7 @@ namespace ViewTelaInicial.Views
                 String Nome = TbNome.Text;
                 float Comissao = float.Parse(TbComissao.Text);
                 String Cpf = TbCpf.Text;
-                int IdCargo = int.Parse(CbCargo.Text);
+                Cargo cargoSelecionado = CbCargo.SelectedItem as Cargo;
 
 
                 Vendedor vendedor = new Vendedor();
@@ -57,8 +58,8 @@ namespace ViewTelaInicial.Views
                 else
                     throw new Exception("Não foi possível identificar o cpf"); 
 
-                if (!IdCargo.Equals(""))
-                    vendedor.CargoId = IdCargo;
+                if (!String.IsNullOrEmpty(cargoSelecionado.CargoId.ToString()))
+                    vendedor.CargoId = cargoSelecionado.CargoId;
                 else
                     throw new Exception("Não foi possível identificar o Cargo");
 
@@ -68,11 +69,13 @@ namespace ViewTelaInicial.Views
                     throw new Exception("Não foi possível identificar a comissão.");
 
                 vendedorcontroller.SalvarVendedor(vendedor);
+                LimparForm();
                 carregarVendedores();
+                MessageBox.Show("Vendedor cadastrado com sucesso!");
             }
             catch (Exception s)
             {
-                throw (s);
+                MessageBox.Show(s.Message);
             }
 
         }
@@ -111,9 +114,34 @@ namespace ViewTelaInicial.Views
 
         }
 
+        private void CarregarCargos() {
+            try {
+                CargoController cargoCont = new CargoController();
+                IList<Cargo> cargos = cargoCont.ListarCargos();
+                if (cargos != null) {
+                    CbCargo.ItemsSource = cargos;
+                    CbCargo.DisplayMemberPath = "Descricao";
+                }
+            } catch (Exception exp) {
+                MessageBox.Show(exp.Message);
+            }
+        }
+
         private void ClickExcluirVendedor(object sender, RoutedEventArgs e)
         {
-
+            try {
+                MessageBoxResult result = MessageBox.Show("Deseja excluir",
+                "Confirma", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                if (result.Equals(MessageBoxResult.OK)) {
+                    Vendedor vend = ((FrameworkElement)sender).DataContext as Vendedor;
+                    VendedorController vController = new VendedorController();
+                    vController.ExcluirVendedor(vend.VendedorId);
+                    MessageBox.Show("Vendedor Excluído com sucesso");
+                    carregarVendedores();
+                }
+            } catch (Exception s) {
+                MessageBox.Show(s.Message);
+            }
         }
 
         private void carregarVendedores()
@@ -178,6 +206,18 @@ namespace ViewTelaInicial.Views
                 }
 
                 */
+        }
+
+        private void btnLimpar_Click(object sender, RoutedEventArgs e) {
+            LimparForm();
+        }
+
+        private void LimparForm() {
+            TbIdVendedor.Text = "";
+            TbNome.Text = "";
+            TbCpf.Text = "";
+            TbComissao.Text = "";
+            CbCargo.SelectedItem = null;
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Controller
             }
         }
 
-        public static List<Cargo> ListarCargos()
+        public List<Cargo> ListarCargos()
         {
             Contexto contexto = new Contexto();
             return contexto.Cargos.ToList();

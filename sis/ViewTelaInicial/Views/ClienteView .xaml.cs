@@ -129,7 +129,7 @@ namespace ViewTelaInicial.Views
             {
                 int IdCliente = int.Parse(TbIdCliente.Text);
                 
-                if (IdCliente != null)
+                if (TbIdCliente.Text != null)
                 {
                     clienteController.ExclirCliente(IdCliente);
                 }
